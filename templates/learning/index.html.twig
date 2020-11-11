@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LearningController!{% endblock %}
+
+{% block body %}
+    <p>{{ name }}</p>
+
+    <form action="{{ path('changeName') }}" method="post">
+        <label for="name">name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <input type="submit" value="submit name">
+    </form>
+
+    <a href="{{ path('aboutme') }}">Go to about me page</a>
+
+{% endblock %}

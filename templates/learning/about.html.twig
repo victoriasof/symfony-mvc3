@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LearningController!{% endblock %}
+
+{% block body %}
+
+<p>About page</p>
+    <p>My name {{name}}</p>
+    {% for item in myArray %}
+        {{ item }}
+    {% endfor %}
+{% endblock %}
